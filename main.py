@@ -98,8 +98,8 @@ if __name__ == "__main__":
 
                 streamers_data.append(streamer_info)
 
-                # if avatar_online_url and username:
-                #     download_image(avatar_online_url, f"avatars/{username}.png")
+                if avatar_online_url and username:
+                    download_image(avatar_online_url, f"avatars/{username}.png")
 
             except Exception as e:
                 print(f"Error parsing streamer element: {e}")
